@@ -1,0 +1,27 @@
+server:
+  port: 9119
+
+spring:
+  application:
+    name: yunlong-mybatis-generator
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.204.130:3306/atcrowdfunding?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  type-aliases-super-type: com.lei.yunlong.generator.my.bean
+mapper:
+  mappers: com.lei.yunlong.generator.my.utils.BaseMapper
+  identity: mysql
+  not-empty: false
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
