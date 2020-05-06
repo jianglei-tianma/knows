@@ -20,4 +20,13 @@ class YunlongGeneratorMyApplicationTests {
 
     }
 
+    @Test
+    void test(){
+        int a;
+        a=6;
+        System.out.println(a);
+        System.out.println(a++);
+        System.out.println(--a);
+    }
+
 }

@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-rbac-springsecurity" />
-        <module name="Springboot-RBAC-SpringSecurity" />
         <module name="mybatis-generator" />
+        <module name="Springboot-RBAC-SpringSecurity" />
+        <module name="knows-common" />
+        <module name="springboot-helloworld-quick" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,7 +19,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="knows-common" options="-parameters" />
       <module name="mybatis-generator" options="-parameters" />
+      <module name="springboot-helloworld-quick" options="-parameters" />
       <module name="springboot-rbac-springsecurity" options="-parameters" />
     </option>
   </component>

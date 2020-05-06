@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-rbac-springsecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/knows-common/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-helloworld-quick/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
