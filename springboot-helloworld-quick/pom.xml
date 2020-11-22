@@ -21,6 +21,19 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.lei</groupId>
+            <artifactId>knows-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.carrotsearch/java-sizeof -->
+        <dependency>
+            <groupId>com.carrotsearch</groupId>
+            <artifactId>java-sizeof</artifactId>
+            <version>0.0.5</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -31,6 +44,18 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+
         <!--springboot 测试单元-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,6 +67,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
         </dependency>
     </dependencies>
 

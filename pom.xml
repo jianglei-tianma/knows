@@ -12,6 +12,7 @@
         <module>mybatis-generator</module>
         <module>Springboot-RBAC-SpringSecurity</module>
         <module>springboot-helloworld-quick</module>
+        <module>java</module>
     </modules>
 
 </project>

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/csv/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jedis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/knows-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis-generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-helloworld-quick/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rbac-springsecurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-task/src/main/java" charset="UTF-8" />
   </component>
 </project>
