@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/springboot-task/pom.xml" />
         <option value="$PROJECT_DIR$/csv/pom.xml" />
         <option value="$PROJECT_DIR$/java/pom.xml" />
+        <option value="$PROJECT_DIR$/client_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

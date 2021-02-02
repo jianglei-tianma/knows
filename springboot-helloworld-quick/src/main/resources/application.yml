@@ -1,4 +1,13 @@
 spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  #应用名
+  application:
+    name: springboot-quick
+  #指定环境
+  profiles:
+    active: dev
+
+
+
 

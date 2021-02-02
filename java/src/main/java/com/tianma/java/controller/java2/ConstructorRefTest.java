@@ -48,7 +48,7 @@ public class ConstructorRefTest {
 
 	//BiFunction中的R apply(T t,U u)
 
-    public void test3(){
+    public static void test3(){
     	BiFunction<Integer,String,Employee> biFun = (id,name) -> new Employee(id,name);
     	Employee emp1 = biFun.apply(12, "Tom");
     	System.out.println(emp1);
@@ -63,7 +63,7 @@ public class ConstructorRefTest {
 	//数组引用
     //Function中的R apply(T t)
 
-    public void test4(){
+    public static void test4(){
     	Function<Integer,String[]> fun = length -> new String[length];
     	String[] arr1 = fun.apply(5);
     	System.out.println(Arrays.toString(arr1));
@@ -73,5 +73,10 @@ public class ConstructorRefTest {
     	String[] arr2 = fun1.apply(10);
     	System.out.println(Arrays.toString(arr2));
     	
+	}
+
+	public static void main(String[] args) {
+		test3();
+		test4();
 	}
 }

@@ -13,11 +13,12 @@ public class AsyncController {
     private AsyncService asyncService;
 
     @GetMapping("/hello")
-    public String hello(){
+    public  String hello(){
         log.info("----------注册用户------------------");
         asyncService.hello();
         return "success";
     }
+
 
 
 }
