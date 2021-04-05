@@ -34,6 +34,9 @@ public class WordcountDriver {
         // 5 设置最终输出kv类型
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
+        //设置使用combiner组件
+        //job.setCombinerClass(WordCountCombiner.class);
+        job.setCombinerClass(WordcountReducer.class);//直接使用reducer作为combiner组件来使用是可以的
         // 6 设置输入和输出路径
         FileInputFormat.setInputPaths(job, new Path(args[0]));//指定读取数据的原始路径
         FileOutputFormat.setOutputPath(job, new Path(args[1]));//指定结果数据输出路径
@@ -41,5 +44,6 @@ public class WordcountDriver {
         boolean result = job.waitForCompletion(true);
         //退出JVM 正常退出是0 ，!0错误退出
         System.exit(result ? 0 : 1);
+
     }
 }

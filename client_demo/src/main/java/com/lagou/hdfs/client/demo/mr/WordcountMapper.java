@@ -6,6 +6,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
+import java.util.Random;
 
 //1、继承Mapper类
 //2、Mapper类的泛型参数4个，2对kv
@@ -23,9 +24,14 @@ public class WordcountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
     //提升全局变量，避免每次执行map方法都执行此操作
     final Text word = new Text();
     final IntWritable one = new IntWritable(1);
+
+    Random randm = new Random();
     //LongWritale,Text -->文本偏移量，一行文本内容 map方法的输入参数，一行文本就调用一次map方法
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+
+        //int i = randm.nextInt(context.getNumReduceTasks());
+
         //1、接收到文本内容，转为String类型
         final String str = value.toString();
         //2、按照空格进行切分
@@ -37,4 +43,5 @@ public class WordcountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
             context.write(word, one);
         }
     }
+
 }

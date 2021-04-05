@@ -10,15 +10,16 @@
         <module name="demo" />
         <module name="java" />
         <module name="jedis" />
-        <module name="knows-common" />
-        <module name="client_demo" />
+        <module name="springboot-rabbitmq" />
+        <module name="springboot-rbac-springsecurity" />
         <module name="mybatis-generator" />
         <module name="eureka-server" />
         <module name="Springboot-RBAC-SpringSecurity" />
         <module name="springboot-helloworld-quick" />
-        <module name="springboot-task" />
         <module name="csv" />
-        <module name="springboot-rbac-springsecurity" />
+        <module name="springboot-task" />
+        <module name="knows-common" />
+        <module name="client_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +40,7 @@
       <module name="knows-common" options="-parameters" />
       <module name="mybatis-generator" options="-parameters" />
       <module name="springboot-helloworld-quick" options="-parameters" />
+      <module name="springboot-rabbitmq" options="-parameters" />
       <module name="springboot-rbac-springsecurity" options="-parameters" />
       <module name="springboot-task" options="-parameters" />
       <module name="xxl-job" options="-parameters" />

@@ -36,7 +36,7 @@ public class WordcountReducer extends Reducer<Text, IntWritable, Text, IntWritab
         int sum = 0;
         for (IntWritable value : values) {
             int i = value.get();
-            sum += 1;
+            sum += i;
         }
         //3、直接输出当前key对应的sum值，结果就是单词出现的踪次数
         total.set(sum);
