@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lagou.hdfs</groupId>
-    <artifactId>client_demo</artifactId>
+    <artifactId>hadoop_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>client_demo</name>
+    <name>hadoop_demo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
