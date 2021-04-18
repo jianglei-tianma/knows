@@ -1,6 +1,5 @@
 package com.lagou.hdfs.client.demo.sequence;
 
-import com.sun.tools.doclint.Checker;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;

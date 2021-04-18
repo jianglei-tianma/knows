@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<allocations>
+    <defaultQueueSchedulingPolicy>fair</defaultQueueSchedulingPolicy>
+    <queue name="root">
+        <queue name="default">
+            <aclAdministerApps>*</aclAdministerApps>
+            <aclSubmitApps>*</aclSubmitApps>
+            <maxResources>9216 mb,4 vcores</maxResources>
+            <maxRunningApps>100</maxRunningApps>
+            <minResources>1024 mb,1vcores</minResources>
+            <minSharePreemptionTimeout>1000</minSharePreemptionTimeout>
+            <schedulingPolicy>fair</schedulingPolicy>
+            <weight>7</weight>
+        </queue>
+        <queue name="queue1">
+            <aclAdministerApps>*</aclAdministerApps>
+            <aclSubmitApps>*</aclSubmitApps>
+            <maxResources>4096 mb,4vcores</maxResources>
+            <maxRunningApps>5</maxRunningApps>
+            <minResources>1024 mb, 1vcores</minResources>
+            <minSharePreemptionTimeout>1000</minSharePreemptionTimeout>
+            <schedulingPolicy>fair</schedulingPolicy>
+            <weight>3</weight>
+        </queue>
+    </queue>
+    <queuePlacementPolicy>
+        <rule create="false" name="specified"/>
+        <rule create="true" name="default"/>
+    </queuePlacementPolicy>
+</allocations>
