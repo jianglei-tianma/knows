@@ -7,19 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-        <module name="java" />
-        <module name="springboot-task" />
         <module name="csv" />
-        <module name="jedis" />
-        <module name="springboot-rbac-springsecurity" />
-        <module name="springboot-rabbitmq" />
-        <module name="eureka-server" />
-        <module name="Springboot-RBAC-SpringSecurity" />
+        <module name="demo" />
         <module name="hadoop_demo" />
-        <module name="mybatis-generator" />
-        <module name="knows-common" />
         <module name="springboot-helloworld-quick" />
+        <module name="jedis" />
+        <module name="springboot-task" />
+        <module name="springboot-rbac-springsecurity" />
+        <module name="Springboot-RBAC-SpringSecurity" />
+        <module name="knows-common" />
+        <module name="eureka-server" />
+        <module name="springboot-mybatisplus" />
+        <module name="mybatis-generator" />
+        <module name="springboot-rabbitmq" />
+        <module name="java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +41,7 @@
       <module name="knows-common" options="-parameters" />
       <module name="mybatis-generator" options="-parameters" />
       <module name="springboot-helloworld-quick" options="-parameters" />
+      <module name="springboot-mybatisplus" options="-parameters" />
       <module name="springboot-rabbitmq" options="-parameters" />
       <module name="springboot-rbac-springsecurity" options="-parameters" />
       <module name="springboot-task" options="-parameters" />

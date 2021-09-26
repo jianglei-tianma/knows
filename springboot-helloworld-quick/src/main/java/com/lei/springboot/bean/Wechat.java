@@ -1,6 +1,6 @@
 package com.lei.springboot.bean;
 
-import lombok.Data;
+        import lombok.Data;
 
 @Data
 public class Wechat {
