@@ -1,4 +1,4 @@
-package com.lagou.hdfs.client.demo.mr;
+package com.lagou.hdfs.hadoop.demo.mr;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;

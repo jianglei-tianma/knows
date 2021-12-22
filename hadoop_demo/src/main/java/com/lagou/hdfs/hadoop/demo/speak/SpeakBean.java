@@ -18,6 +18,7 @@ public class SpeakBean implements Writable {
     private Long sumDuration;//总时长
     //准备一个空惨构造
     public SpeakBean() {
+
     }
 
     //序列化方法：就是把内容输出到网络或者文本中

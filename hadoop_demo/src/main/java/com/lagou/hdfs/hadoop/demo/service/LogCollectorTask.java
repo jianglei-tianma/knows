@@ -14,9 +14,6 @@ public class LogCollectorTask extends TimerTask {
     @Override
     public void run() {
         //采集业务逻辑
-
-
-
         //1、扫描指定目录，找到待上传文件
         File logsDir = new File("D:\\BigData\\logs");
         File[] uploadFiles = logsDir.listFiles((FilenameFilter) (dir, name) -> {
